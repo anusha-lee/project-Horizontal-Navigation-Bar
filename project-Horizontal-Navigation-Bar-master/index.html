@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width">
+    <title>Code Advebture - Navigation Bar and Page Trasition</title> 
+
+    <link rel="stylesheet" href="css/style.css" type="text/css"> 
+    <link rel="stylesheet" href="css/animsition.min.css" type="text/css">      
+  </head>
+  <body>
+    <div class="animsition">
+      <nav class="navBar">
+      	<img src="images/treehouse-icon.png" title="Treehouse" alt="treehouse" class="treehouseIcon">
+      	<ul id="navBar"> 	  		
+            <li><a href="index.html" class="animsition-link">HOME</a></li>
+            <li><a href="about.html" class="animsition-link">ABOUT</a></li>
+            <li><a href="location.html" class="animsition-link">LOCATION</a></li>
+            <li><a href="contact.html" class="animsition-link" data-animsition-out-class="fade-out-right"
+  data-animsition-out-duration="2000">CONTACT</a></li>
+      	</ul>
+      </nav>
+      <div class="container">
+          <div class="box" id="boxHome">
+        	<div class="signupText">
+    	    	<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+    	    	<p>An imbecillia labefactat co incidissem im. Exhibetur inscitiae concilium ii at mo.</p>
+          </div>
+        	<div class="signupForm">        		
+  	    		<form class="form01">
+  	    		  <p>Try it free for 7 days</p>
+  	    			<label>First name</label>
+  	    			<input type="text" placeholder="First Name">
+  	    			<label>Last name</label>
+  	    			<input type="text" placeholder="Last Name">
+  	    			<label>Email address</label>
+  	    			<input type="email" placeholder="Email">
+  	    			<label>Password</label>
+  	    			<input type="password" placeholder="Password">
+  	    		  <button type="submit">Contact Support</button>
+  	        </form>    	    	
+    	    </div>
+    	  </div> 	     	
+      </div>
+    </div>    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.animsition').animsition();
+      });
+    </script>
+  </body>
+</html>
+
